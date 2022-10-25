@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  font: inherit;
+  line-height: 1.5;
+  background-color: hsl(30, 38%, 92%);
+  padding: 1rem;
+}
+
+/* General styling */
+p {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(228, 12%, 48%);
+  font-size: 0.875rem;
+}
+
+.card-container {
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 1rem;
+    width: 21.44rem;
+    overflow: hidden;
+}
+.card-img-mobile {
+  display: block;
+  max-width: 100%;
+}
+.card-img-desktop{
+display: none;
+}
+
+.card-perfume{
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.card-text{
+    padding: 2rem;
+}
+
+.card-text h1{
+    font-family: "Fraunces", serif;
+    font-size: 2rem;
+    line-height: 1;
+    padding-block: 1rem;
+    color: hsl(212, 21%, 14%);
+}
+
+.card-prices{
+    display: flex;
+    align-items: center;
+    padding-block: 1.25rem;
+}
+
+.card-price1 {
+  font-family: "Fraunces", serif;
+  padding-right: 1.5rem ;
+  font-size: 2rem;
+  color: hsl(158, 36%, 37%);
+}
+
+.card-price2{
+text-decoration: line-through;
+}
+
+.card-button{
+    display: flex;
+    background-color: hsl(158, 36%, 37%);
+    align-items: center;
+    justify-content: center;
+    padding: 1rem ;
+    border-radius: 0.6rem;
+}
+
+.card-button:hover{
+background-color: hsl(158, 37%, 17%);
+cursor: pointer ;
+transition: ease-in-out 0.25s;
+}
+
+.card-button img{
+width: 1.2rem;
+}
+
+.card-button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Monserrat', sans-serif;
+    padding-inline: 1rem;
+}
+
+@media screen and (min-width:700px) {
+  .card-container{
+    flex-flow: row;
+    width: 42rem;
+    margin: 6rem auto;
+  }
+  
+  .card-img-desktop{
+    display: block;
+    max-width: 100%;
+   
+  }
+
+  .card-img-mobile{
+    display: none;
+  }
+
+}
